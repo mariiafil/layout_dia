@@ -23,6 +23,7 @@ h1 {
   clip-path: polygon(0 0, 98% 0, 85% 100%, 0% 100%);
   color: #fff; }
   .header__top {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,6 +68,31 @@ h1 {
       -webkit-box-shadow: 5px 2px 10px -2px #050888;
       box-shadow: 5px 2px 10px -2px #050888; }
 
+.nav__toggler, .nav__toggler-label {
+  display: none; }
+
+.nav__toggler-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  padding-top: 15%;
+  right: 5%;
+  top: 5%;
+  width: 20px;
+  height: 20px;
+  background: url(../images/menu.png) no-repeat center; }
+
+.nav__toggler:checked ~ .nav__toggler-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  background: url(../images/cross.png) no-repeat center; }
+
 .nav__list {
   list-style: none;
   display: -webkit-box;
@@ -94,6 +120,45 @@ h1 {
 @media screen and (max-width: 1110px) {
   .header__top {
     max-width: 800px; } }
+
+@media screen and (max-width: 900px) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 0;
+    height: 100vh; }
+    .header__top {
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 5%; }
+    .header__content {
+      max-width: 300px;
+      text-align: center; }
+    .header__title {
+      margin-bottom: 80px; }
+    .header__button {
+      margin: 0 auto; }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    background-color: #56ccf2;
+    right: -20px;
+    left: -20px;
+    top: -20px;
+    height: 100vh;
+    padding-left: 50px;
+    padding-top: 40px; }
+  .nav__link--active {
+    display: none; }
+  .nav__toggler-label {
+    display: block; }
+  .nav__toggler:not(:checked) ~ .nav__list {
+    display: none; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -150,7 +215,6 @@ h1 {
       color: #2f80ed; }
 
 .slider__photo {
-  margin: 0;
   height: 500px; }
 
 .slider__item {
@@ -211,6 +275,42 @@ h1 {
     max-width: 800px;
     background-size: contain; } }
 
+@media screen and (max-width: 900px) {
+  .about {
+    padding-top: 50px; }
+    .about__content {
+      max-width: 300px; }
+  .slider__photo {
+    height: 200px;
+    margin-bottom: 90px; }
+  .slider__item {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 300px;
+    top: 0;
+    height: 200px; }
+  .slider__button {
+    width: 40px;
+    opacity: 0.5;
+    height: 34px;
+    top: 80%;
+    left: 40%; }
+  .slider__info {
+    margin: 10px;
+    max-width: 200px;
+    top: 10px; }
+  .slider__text {
+    font-size: 12px; }
+  .socials {
+    display: none; } }
+
+@media screen and (max-width: 400px) {
+  .slider__item {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -231,7 +331,9 @@ h1 {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .service__item {
     max-width: 264px; }
     .service__item:not(:nth-child(3n)) {
@@ -256,6 +358,19 @@ h1 {
 @media screen and (max-width: 1050px) {
   .service__item {
     max-width: 220px; } }
+
+@media screen and (max-width: 900px) {
+  .service__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .service__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px; } }
 
 body {
   background: #eee;
