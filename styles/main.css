@@ -117,7 +117,18 @@ h1 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .nav__link--active {
-    border-bottom: solid 3px #fcc304; }
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 3px;
+    border-bottom: solid 3px #fcc304;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out; }
+    .nav__link--active:hover {
+      color: #56ccf2; }
   .nav__link:hover, .nav__link:focus {
     background-color: rgba(86, 204, 242, 0.5);
     border-radius: 20px; }
