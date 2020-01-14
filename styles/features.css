@@ -82,6 +82,10 @@
   .features {
     height: auto;
     background-image: none;
-    padding: 100px 20px; } }
+    padding: 100px 20px; }
+    .features__item {
+      font-size: 14px;
+      padding-left: 80px;
+      margin-right: 20px; } }
 
 /*# sourceMappingURL=features.css.map */
