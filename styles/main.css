@@ -120,7 +120,7 @@ h1 {
   -webkit-transition: background-color, border-radius 0.2s ease-in-out;
   transition: background-color, border-radius 0.2s ease-in-out; }
   .nav__link:hover, .nav__link:focus {
-    background-color: rgba(252, 195, 4, 0.9); }
+    background-color: #fcc304; }
   .nav__link--active {
     display: block;
     padding: 5px 10px;
@@ -135,7 +135,7 @@ h1 {
     -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out; }
     .nav__link--active:hover, .nav__link--active:focus {
-      color: #56ccf2; }
+      color: #fcc304; }
 
 @media screen and (max-width: 1110px) {
   .header__top {
