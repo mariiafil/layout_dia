@@ -46,7 +46,9 @@ h1 {
   .header__title {
     font-weight: 900;
     font-size: 64px;
-    margin: 0 0 20px; }
+    margin: 0 0 20px;
+    -webkit-animation: header_anim 3s;
+            animation: header_anim 3s; }
   .header__info {
     margin-bottom: 40px;
     font-size: 24px;
@@ -229,6 +231,22 @@ h1 {
   .header__info {
     font-size: 18px;
     margin-bottom: 80px; } }
+
+@keyframes header_anim {
+  from {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes header_anim {
+  from {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 h1 {
   font-family: "Roboto", sans-serif;
