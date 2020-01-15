@@ -6,7 +6,7 @@
   color: #fff;
   background-color: #2f80ed;
   background-image: url(../images/features/Rectangle.png);
-  background-position: right;
+  background-position: 120% 0;
   background-repeat: no-repeat; }
   .features__info {
     max-width: 1000px;
