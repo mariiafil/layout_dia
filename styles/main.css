@@ -34,10 +34,12 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     max-width: 1000px;
-    margin: 0 auto 80px; }
+    margin: 0 auto 80px;
+    padding-top: 100px; }
   .header__logo-link {
     font-weight: bold;
     font-size: 32px;
+    line-height: 100%;
     color: #fff;
     text-decoration: none; }
   .header__content {
@@ -80,12 +82,11 @@ h1 {
   content: "";
   display: block;
   position: absolute;
-  padding-top: 15%;
   z-index: 1;
   right: 5%;
-  top: 5%;
+  bottom: 0;
   width: 20px;
-  height: 20px;
+  height: 32px;
   background: url(../images/menu.png) no-repeat center; }
 
 .nav__toggler:checked ~ .nav__toggler-label::before {
@@ -93,10 +94,10 @@ h1 {
   display: block;
   position: absolute;
   right: 5%;
-  top: 5%;
+  bottom: 0;
   z-index: 3;
   width: 20px;
-  height: 20px;
+  height: 32px;
   background: url(../images/cross.png) no-repeat center; }
 
 .nav__list {
@@ -217,6 +218,10 @@ h1 {
   .nav__toggler-label {
     display: block; } }
 
+@media screen and (max-width: 800px) and (min-height: 1000px) {
+  .header__info {
+    margin-bottom: 50px; } }
+
 @media screen and (max-width: 500px) {
   .nav__list {
     padding-top: 230px; }
@@ -324,6 +329,8 @@ h1 {
     width: 100%;
     height: 100%;
     display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
     -webkit-animation: slider 3s;
             animation: slider 3s; }
   .slider__button {
@@ -381,17 +388,18 @@ h1 {
   .about {
     padding-top: 280px; }
     .about__content {
-      max-width: 400px; }
+      max-width: 80%; }
   .slider {
     left: 50%;
     top: 30px;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+    width: 80%; }
     .slider__item {
-      width: 400px;
+      width: 100%;
       height: 200px; }
     .slider__img-container {
-      width: 400px;
+      width: 100%;
       height: 200px; }
     .slider__button {
       width: 40px;
@@ -408,19 +416,12 @@ h1 {
 @media screen and (max-width: 500px) {
   .about {
     padding-top: 250px; }
-    .about__content {
-      max-width: 300px;
-      padding: 0 20px; }
     .about__info {
       font-size: 20px;
       line-height: 150%; }
-  .slider__item {
-    width: 300px; }
-  .slider__img-container {
-    width: 300px; }
   .slider__info {
     margin: 30px 0 30px 40px;
-    max-width: 250px; }
+    max-width: 75%; }
   .slider__button--prev {
     -webkit-transform: translate(-100%, -50%);
             transform: translate(-100%, -50%); }
@@ -500,11 +501,22 @@ h1 {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
 
-@media screen and (max-width: 1050px) {
-  .service__item {
-    max-width: 220px; } }
+@media screen and (max-width: 1024px) {
+  .service__cards {
+    max-width: 700px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto; }
+  .service__item:not(:last-child) {
+    margin-bottom: 50px;
+    margin-right: 0; }
+  .service__item:first-child {
+    margin-right: 50px; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .service__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -514,8 +526,10 @@ h1 {
         -ms-flex-align: center;
             align-items: center; }
   .service__item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 40px; } }
+    margin-bottom: 80px;
+    margin-right: 0; }
+  .service__item:last-child {
+    margin: 0; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -1162,12 +1176,15 @@ h1 {
     border-radius: 20px;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    top: 80%;
+    top: 85%;
     right: 280px; }
 
 @media screen and (max-width: 880px) {
-  .decor {
-    display: none; } }
+  .work__header {
+    font-size: 35px; }
+  .work__descr {
+    font-size: 20px;
+    max-width: 70%; } }
 
 @media screen and (max-width: 700px) {
   .work__header {
@@ -1176,12 +1193,14 @@ h1 {
     font-size: 20px;
     padding: 0 50px; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .work__header {
     font-size: 24px; }
   .work__descr {
     font-size: 18px;
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .decor {
+    display: none; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -1209,7 +1228,7 @@ h1 {
     font-size: 16px;
     position: relative;
     padding-left: 40px;
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
     .message__title::before {
       content: "";
       display: block;
@@ -1268,7 +1287,8 @@ h1 {
   font-weight: 800;
   font-size: 16px;
   position: relative;
-  padding-left: 40px; }
+  padding-left: 40px;
+  margin-bottom: 50px; }
   .contact__title::before {
     content: "";
     display: block;
@@ -1324,21 +1344,22 @@ h1 {
             align-items: center;
     padding-bottom: 100px; }
   .message {
-    margin-right: 0; }
+    margin-right: 0;
+    max-width: 50%; }
   .contact__header {
     font-size: 20px;
     max-width: 300px; } }
 
 @media screen and (max-width: 700px) {
   .message {
-    max-width: 400px; } }
+    max-width: 80%; } }
 
 @media screen and (max-width: 450px) {
   .message {
-    max-width: 250px; }
+    max-width: 80%; }
   .contact {
     margin-left: 20px;
-    max-width: 250px; } }
+    max-width: 80%; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
