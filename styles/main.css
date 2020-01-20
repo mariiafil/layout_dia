@@ -34,8 +34,7 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     max-width: 1000px;
-    margin: 0 auto 80px;
-    padding-top: 100px; }
+    margin: 0 auto 80px; }
   .header__logo-link {
     font-weight: bold;
     font-size: 32px;
