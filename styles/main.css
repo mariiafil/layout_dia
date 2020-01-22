@@ -66,8 +66,8 @@ h1 {
     border-radius: 64px;
     outline: none;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     .header__button:hover, .header__button:focus {
       background-color: #144ed5;
       color: #fff;
@@ -191,10 +191,10 @@ h1 {
     padding-top: 280px;
     clip-path: circle(100px at 90% -20%);
     -webkit-clip-path: circle(100px at 90% -20%);
-    -webkit-transition: -webkit-clip-path 1s ease-in-out;
-    transition: -webkit-clip-path 1s ease-in-out;
-    transition: clip-path 1s ease-in-out;
-    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out; }
+    -webkit-transition: -webkit-clip-path 0.3s ease-in-out;
+    transition: -webkit-clip-path 0.3s ease-in-out;
+    transition: clip-path 0.3s ease-in-out;
+    transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out; }
     .nav__list.open {
       clip-path: circle(2000px at 90% -20%);
       -webkit-clip-path: circle(2000px at 90% -20%); }
@@ -306,8 +306,8 @@ h1 {
     text-transform: uppercase;
     color: #253757;
     outline: none;
-    -webkit-transition: color 0.4s ease-in-out;
-    transition: color 0.4s ease-in-out; }
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
     .socials__link:hover, .socials__link:focus {
       color: #fcc304; }
 
@@ -471,7 +471,8 @@ h1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .service__item {
-    max-width: 264px; }
+    max-width: 264px;
+    text-align: center; }
     .service__item:not(:nth-child(3n)) {
       margin-right: 120px; }
   .service__name {
@@ -492,10 +493,10 @@ h1 {
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-transition: -webkit-transform 1s ease-in-out;
-    transition: -webkit-transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
     .service__photo:hover {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
@@ -588,10 +589,10 @@ h1 {
     height: 256px;
     background-color: #fff;
     text-align: center;
-    -webkit-transition: -webkit-transform 1s ease-in-out;
-    transition: -webkit-transform 1s ease-in-out;
-    transition: transform 1s ease-in-out;
-    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
     .process__item:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
@@ -849,8 +850,8 @@ h1 {
             transform: rotate(-15deg);
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
   .testimonials__item {
     padding: 35px 32px 58px;
     width: 250px;
@@ -1029,8 +1030,8 @@ h1 {
     border-radius: 64px;
     outline: none;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin: 0 auto; }
     .work__button:hover, .work__button:focus {
       background-color: #144ed5;
@@ -1271,8 +1272,8 @@ h1 {
     border-radius: 64px;
     outline: none;
     cursor: pointer;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin: 80px auto; }
     .message__button:hover, .message__button:focus {
       background-color: #144ed5;
