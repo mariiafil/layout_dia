@@ -56,16 +56,17 @@ h1 {
     line-height: 150%; }
   .header__button {
     display: block;
-    color: #253757;
-    background-color: #fff;
+    text-align: center;
+    line-height: 56px;
     width: 226px;
     height: 56px;
     font-weight: bold;
     font-size: 16px;
     border: none;
     border-radius: 64px;
-    outline: none;
-    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     .header__button:hover, .header__button:focus {
@@ -329,9 +330,7 @@ h1 {
     height: 100%;
     display: block;
     -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-animation: slider 3s;
-            animation: slider 3s; }
+       object-fit: cover; }
   .slider__button {
     background-color: #fcc304;
     border: none;
@@ -427,26 +426,6 @@ h1 {
   .slider__button--next {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); } }
-
-@-webkit-keyframes slider {
-  from {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    opacity: 0.4; }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; } }
-
-@keyframes slider {
-  from {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    opacity: 0.4; }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -1019,23 +998,23 @@ h1 {
     line-height: 150%;
     margin: 0 auto 56px; }
   .work__button {
+    margin: 0 auto;
     display: block;
-    color: #fff;
-    background-color: #2f80ed;
+    text-align: center;
+    line-height: 56px;
     width: 226px;
     height: 56px;
     font-weight: bold;
     font-size: 16px;
     border: none;
     border-radius: 64px;
-    outline: none;
-    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2f80ed;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin: 0 auto; }
+    transition: all 0.3s ease-in-out; }
     .work__button:hover, .work__button:focus {
       background-color: #144ed5;
-      color: #fff;
       -webkit-box-shadow: 5px 2px 10px -2px #050888;
       box-shadow: 5px 2px 10px -2px #050888; }
 
@@ -1257,7 +1236,7 @@ h1 {
     border-right: none;
     border-bottom: #e1e1e1 solid 1px;
     background-color: transparent;
-    outline: 0; }
+    outline: none; }
     .message__input:focus {
       border-bottom: #2f80ed solid 1px; }
   .message__button {
@@ -1360,6 +1339,12 @@ h1 {
   .contact {
     margin-left: 20px;
     max-width: 80%; } }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px #edf0f8 inset;
+  -webkit-box-shadow: 0 0 0 1000px #edf0f8 inset; }
 
 h1 {
   font-family: "Roboto", sans-serif;
